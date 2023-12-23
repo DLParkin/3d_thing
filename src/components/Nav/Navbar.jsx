@@ -22,14 +22,7 @@ const Navbar = () => {
             Wanted to learn a little about three.js
             <br />
             <br />
-            Cheers to{" "}
-            <a
-              href="https://www.youtube.com/watch?v=FkowOdMjvYo"
-              className="underline"
-            >
-              Javascript Mastery
-            </a>{" "}
-            for the intro tutorial.
+            And here we are :)
             <br />
             <a
               onClick={() => setOpenAbout(!openAbout)}

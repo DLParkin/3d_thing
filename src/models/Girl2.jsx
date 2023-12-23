@@ -93,9 +93,9 @@ const Girl2 = ({ isRotating, setIsRotating, ...props }) => {
     canvas.addEventListener("pointerup", handleMouseUp);
     canvas.addEventListener("pointermove", handleMouseMove);
 
-    canvas.addEventListener("touchStart", handleMouseDown);
-    canvas.addEventListener("touchEnd", handleMouseUp);
-    canvas.addEventListener("touchMove", handleMouseMove);
+    canvas.addEventListener("touchstart", handleMouseDown);
+    canvas.addEventListener("touchend", handleMouseUp);
+    canvas.addEventListener("touchmove", handleMouseMove);
 
     document.addEventListener("keydown", handleKeyDown);
     document.addEventListener("keyup", handleKeyUp);
@@ -107,9 +107,9 @@ const Girl2 = ({ isRotating, setIsRotating, ...props }) => {
       canvas.removeEventListener("pointerup", handleMouseUp);
       canvas.removeEventListener("pointermove", handleMouseMove);
 
-      canvas.removeEventListener("touchStart", handleMouseDown);
-      canvas.removeEventListener("touchEnd", handleMouseUp);
-      canvas.removeEventListener("touchMove", handleMouseMove);
+      canvas.removeEventListener("touchstart", handleMouseDown);
+      canvas.removeEventListener("touchend", handleMouseUp);
+      canvas.removeEventListener("touchmove", handleMouseMove);
 
       document.removeEventListener("keydown", handleKeyDown);
       document.removeEventListener("keyup", handleKeyUp);
