@@ -51,7 +51,7 @@ body:has(.card[data-color="green"]:hover) {
   }
 
   .header {
-    @apply flex justify-between items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
+    @apply flex justify-end items-center sm:px-16 px-8 py-4 max-w-5xl mx-auto absolute top-0 bg-transparent z-10 right-0 left-0;
   }
 
   .footer {
@@ -76,6 +76,11 @@ body:has(.card[data-color="green"]:hover) {
 
   .cta-text {
     @apply text-black-500 font-extrabold flex-1 text-3xl max-md:text-center;
+  }
+
+  .notice {
+    @apply absolute top-0 bottom-0 left-0 right-0 z-20 flex items-center justify-center max-width-container;
+
   }
 }
 
@@ -180,4 +185,20 @@ body:has(.card[data-color="green"]:hover) {
   border: #fff;
   box-shadow: 0.6vmin 0.6vmin #fff, 1vmin 1vmin #d2e4ff, 1vmin 1vmin #d2e4ff,
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
+}
+
+.max-width-container {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .max-width-container {
+    max-width: 100%;
+    background: rgba(8, 116, 239, 0.07);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
 }
